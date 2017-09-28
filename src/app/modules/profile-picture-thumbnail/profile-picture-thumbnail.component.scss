@@ -1,0 +1,29 @@
+:host {
+	.initials {
+		color: white;
+		font-weight: bold;
+	}
+	cursor: pointer;
+	//height: 45px;
+	//width: 45px;
+	text-decoration: none;
+	border-radius: 100px;
+	overflow: hidden;
+	display: inline-block;
+	&:hover {
+		text-decoration: none;
+	}
+	.letter, img {
+		height: 100%;
+		width: 100%;
+	}
+	.letter {
+		&:not(.anonymous) {
+			letter-spacing: 1px;
+		}
+		color: white;
+		//@extend .layout-column;
+		//@extend .layout-align-center-center;
+		font-size: 17px;
+	}
+}

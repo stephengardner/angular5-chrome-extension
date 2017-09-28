@@ -1,0 +1,9 @@
+<a class="profile-picture-thumbnail" fxLayout="column" fxLayoutAlign="center center"
+   (click)="catchClickIfEmptyHref($event)"
+   href="{{getHref()}}"
+   [ngStyle]="{'width' : width, 'height' : height, 'background' : getBackgroundColor() }">
+  <div fxFlex *ngIf="!hasProfilePicture()" class="initials" fxLayout="column" fxLayoutAlign="center center">
+    {{getInitials()}}
+  </div>
+  <img *ngIf="hasProfilePicture()" src="getProfilePictureUrl()"/>
+</a>
