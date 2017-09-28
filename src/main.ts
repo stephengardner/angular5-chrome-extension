@@ -10,7 +10,7 @@ import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
 
 // HMR
-import { hmrBootstrap } from './hmr';
+// import { hmrBootstrap } from './hmr';
 
 // checking env
 if (environment.production) {
@@ -25,7 +25,9 @@ const bootstrap = () => platformBrowserDynamic().bootstrapModule(AppModule)
 // Checking env and launching
 if (environment.hmr) {
   if (module[ 'hot' ]) {
-    hmrBootstrap(module, bootstrap);
+    let hmrBootstrap:any = require('./hmr');
+    console.log("---- Hot Module Replacement Is Being Used ----");
+    hmrBootstrap.hmrBootstrap(module, bootstrap);
   } else {
     console.error('HMR is not enabled for webpack-dev-server!');
     console.log('Are you using the --hmr flag for ng serve?');
