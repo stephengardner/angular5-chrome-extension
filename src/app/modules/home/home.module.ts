@@ -1,11 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './home.component';
+import { HttpModule } from '@angular/http';
+import {HomeService} from "./services/home.service";
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    HttpModule
   ],
+  providers : [ HomeService ],
   exports : [
     HomeComponent
   ],

@@ -13,7 +13,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "hmr": "ng serve --hmr -e=hmr",
+    "dev": "ng serve --hmr --env=hmr",
+    "hmr": "ng serve --hmr --env=hmr",
     "postinstall": "ng build --aot --prod",
     "start": "node server.js"
   },
