@@ -3,14 +3,14 @@ import { CommonModule } from '@angular/common';
 import { NavbarComponent } from './navbar.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ProfilePictureThumbnailModule } from '../profile-picture-thumbnail/profile-picture-thumbnail.module';
-import { MdIconModule } from '@angular/material/icon';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   imports: [
     CommonModule,
     FlexLayoutModule,
     ProfilePictureThumbnailModule,
-    MdIconModule
+    MatIconModule
   ],
   declarations: [ NavbarComponent ],
   exports : [ NavbarComponent ]

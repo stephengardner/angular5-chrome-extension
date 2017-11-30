@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MdCardComponent } from './components/md-card/md-card.component';
+import { MatCardComponent } from './components/md-card/md-card.component';
 
 @NgModule({
   imports: [
     CommonModule
   ],
-  declarations: [MdCardComponent],
-  exports : [MdCardComponent]
+  declarations: [MatCardComponent],
+  exports : [MatCardComponent]
 })
-export class AgMdModule { }
+export class AgMatModule { }
